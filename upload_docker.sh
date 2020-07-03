@@ -6,10 +6,13 @@
 # Step 1:
 # Create dockerpath
 # dockerpath=<your docker ID/path>
+dockerpath=tresvitae/ml-microservice
 
 # Step 2:  
 # Authenticate & tag
 echo "Docker ID and Image: $dockerpath"
+docker tag ml-microservices $dockerpath
 
 # Step 3:
 # Push image to a docker repository
+docker push $dockerpath
